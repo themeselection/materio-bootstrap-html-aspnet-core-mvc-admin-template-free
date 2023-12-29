@@ -51,7 +51,7 @@ Please [visit](https://demos.themeselection.com/materio-bootstrap-html-admin-tem
 - Extended UI
   - Perfect Scrollbar
   - Text Divider
-- Boxicon
+- Material Design Icons (MDI)
 - Form Elements
   - Basic Inputs
   - Input Groups
@@ -85,7 +85,7 @@ Please [visit](https://demos.themeselection.com/materio-bootstrap-html-admin-tem
 | 1 Chart Library                                                                            | 2 Chart Libraries                                                                                                                  |
 | -                                                                                          | Multiple Navbar & Menu Options                                                                                                     |
 | -                                                                                          | Starter-kit                                                                                                                        |
-| -                                                                                          | Internationalization support                                                                                                       |
+| -                                                                                          | Internationalization support, Docker support                                                                                       |
 | -                                                                                          | RTL Support                                                                                                                        |
 | Regular Support                                                                            | Priority Support                                                                                                                   |
 | Detailed Documentation                                                                     | Detailed Documentation                                                                                                             |
@@ -124,7 +124,7 @@ Contribution are always welcome and recommended! Here is how:
 
 ## Changelog 📆
 
-Please refer to the [CHANGELOG](https://github.com/themeselection/materio-bootstrap-html-aspnet-core-mvc-admin-template-free/blob/main/CHANGELOG.md) file. We will add detailed release notes to each new release.
+Please refer to the [CHANGELOG](CHANGELOG.md) file. We will add detailed release notes to each new release.
 
 ## Support 🧑🏻‍💻
 
