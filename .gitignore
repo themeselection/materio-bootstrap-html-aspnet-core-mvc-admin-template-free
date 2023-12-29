@@ -100,14 +100,6 @@ bld/
 .vs/
 # Uncomment if you have tasks that create the project's static files in wwwroot
 
-# Ignoring following files/folder only for master
-
-wwwroot/css/*.css
-wwwroot/js/*.js
-wwwroot/vendor/**/*.css
-!wwwroot/vendor/fonts/*.css
-wwwroot/vendor/**/*.js
-wwwroot/vendor/css
 
 
 
