@@ -55,13 +55,6 @@
       background-color: rgba-to-hex(rgba($color, 0.95), $background: $rth-color) !important;
     }
   }
-
-  //! Fix: Dropdown notification read badge bg color
-  .dropdown-notifications-item:not(.mark-as-read) {
-    .dropdown-notifications-read span {
-      background-color: $color;
-    }
-  }
 }
 
 @mixin bg-variant($parent, $color, $rth-color: #000) {
@@ -86,7 +79,10 @@
     color: $color !important;
   }
   //! Fix: text-body hover color
-  .text-body[href]:hover {
-    color: shift-color($color, $link-shade-percentage) !important;
+  .text-body,
+  .text-heading {
+    &[href]:hover {
+      color: shift-color($color, $link-shade-percentage) !important;
+    }
   }
 }

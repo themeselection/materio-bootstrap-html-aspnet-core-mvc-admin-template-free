@@ -15,7 +15,7 @@
     </a>
 
     <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto">
-      <i class="mdi menu-toggle-icon d-xl-block align-middle mdi-20px"></i>
+      <i class="menu-toggle-icon d-xl-block align-middle"></i>
     </a>
   </div>
 
@@ -26,7 +26,7 @@
     <!-- Dashboards -->
     <li class='menu-item@(currentPage.EndsWith("/") || currentPage.StartsWith("/Dashboards") ? " active open" : "")'>
       <a href="javascript:void(0);" class="menu-link menu-toggle">
-        <i class="menu-icon tf-icons mdi mdi-home-outline"></i>
+        <i class="menu-icon tf-icons ri-home-smile-line"></i>
         <div>Dashboards</div>
         <div class="badge bg-danger rounded-pill ms-auto">5</div>
       </a>
@@ -62,7 +62,7 @@
     <!-- Layouts -->
     <li class='menu-item@(currentPage.StartsWith("/LayoutExamples") ? " active open" : "")'>
       <a href="javascript:void(0);" class="menu-link menu-toggle">
-        <i class="menu-icon tf-icons mdi mdi-window-maximize"></i>
+        <i class="menu-icon tf-icons ri-layout-2-line"></i>
         <div>Layouts</div>
       </a>
 
@@ -99,7 +99,7 @@
     <!-- Front Pages -->
     <li class='menu-item@(currentPage.StartsWith("/FrontPages") ? " active open" : "")'>
       <a href="javascript:void(0);" class="menu-link menu-toggle">
-        <i class='menu-icon tf-icons mdi mdi-flip-to-front'></i>
+        <i class='menu-icon tf-icons ri-file-copy-line'></i>
         <div>Front Pages</div><div class="badge bg-label-primary fs-tiny rounded-pill ms-auto">Pro</div>
       </a>
       <ul class="menu-sub">
@@ -131,38 +131,38 @@
       </ul>
     </li>
 
-    <li class="menu-header fw-medium mt-4">
+    <li class="menu-header mt-7">
       <span class="menu-header-text">Apps &amp; Pages</span>
     </li>
     <!-- Apps -->
     <li class='menu-item@(currentPage == "/Apps/Email" ? " active" : "")'>
       <a href="https://demos.themeselection.com/materio-aspnet-core-mvc-admin-template/html/vertical-menu-template/app-email.html" target="_blank" class="menu-link">
-        <i class="menu-icon tf-icons mdi mdi-email-outline"></i>
+        <i class="menu-icon tf-icons ri-mail-open-line"></i>
         <div>Email</div><div class="badge bg-label-primary fs-tiny rounded-pill ms-auto">Pro</div>
       </a>
     </li>
     <li class='menu-item@(currentPage == "/Apps/Chat" ? " active" : "")'>
       <a href="https://demos.themeselection.com/materio-aspnet-core-mvc-admin-template/html/vertical-menu-template/app-chat.html" target="_blank" class="menu-link">
-        <i class="menu-icon tf-icons mdi mdi-message-outline"></i>
+        <i class="menu-icon tf-icons ri-wechat-line"></i>
         <div>Chat</div><div class="badge bg-label-primary fs-tiny rounded-pill ms-auto">Pro</div>
       </a>
     </li>
     <li class='menu-item@(currentPage == "/Apps/Calendar" ? " active" : "")'>
       <a href="https://demos.themeselection.com/materio-aspnet-core-mvc-admin-template/html/vertical-menu-template/app-calendar.html" target="_blank" class="menu-link">
-        <i class="menu-icon tf-icons mdi mdi-calendar-blank-outline"></i>
+        <i class="menu-icon tf-icons ri-calendar-line"></i>
         <div>Calendar</div><div class="badge bg-label-primary fs-tiny rounded-pill ms-auto">Pro</div>
       </a>
     </li>
     <li class='menu-item@(currentPage == "/Apps/Kanban" ? " active" : "")'>
       <a href="https://demos.themeselection.com/materio-aspnet-core-mvc-admin-template/html/vertical-menu-template/app-kanban.html" target="_blank" class="menu-link">
-        <i class="menu-icon tf-icons mdi mdi-view-grid-outline"></i>
+        <i class="menu-icon tf-icons ri-drag-drop-line"></i>
         <div>Kanban</div><div class="badge bg-label-primary fs-tiny rounded-pill ms-auto">Pro</div>
       </a>
     </li>
     <!-- Pages -->
     <li class='menu-item@(currentPage.StartsWith("/Pages") ? " active open" : "")'>
       <a href="javascript:void(0);" class="menu-link menu-toggle">
-        <i class="menu-icon tf-icons mdi mdi-account-outline"></i>
+        <i class="menu-icon tf-icons ri-layout-left-line"></i>
         <div>Account Settings</div>
       </a>
       <ul class="menu-sub">
@@ -185,7 +185,7 @@
     </li>
     <li class='menu-item@(currentPage.StartsWith("/Auth") ? " active open" : "")'>
       <a href="javascript:void(0);" class="menu-link menu-toggle">
-        <i class="menu-icon tf-icons mdi mdi-lock-open-outline"></i>
+        <i class="menu-icon tf-icons ri-shield-keyhole-line"></i>
         <div>Authentications</div>
       </a>
       <ul class="menu-sub">
@@ -208,7 +208,7 @@
     </li>
     <li class='menu-item@(currentPage.StartsWith("/Pages/Misc") ? " active open" : "")'>
       <a href="javascript:void(0);" class="menu-link menu-toggle">
-        <i class="menu-icon tf-icons mdi mdi-cube-outline"></i>
+        <i class="menu-icon tf-icons ri-box-3-line"></i>
         <div>Misc</div>
       </a>
       <ul class="menu-sub">
@@ -225,18 +225,18 @@
       </ul>
     </li>
     <!-- Components -->
-    <li class="menu-header fw-medium mt-4"><span class="menu-header-text">Components</span></li>
+    <li class="menu-header mt-7"><span class="menu-header-text">Components</span></li>
     <!-- Cards -->
     <li class='menu-item@(currentPage == "/Cards/Basic" ? " active" : "")'>
       <a asp-controller="Cards" asp-action="Basic" class="menu-link">
-        <i class="menu-icon tf-icons mdi mdi-credit-card-outline"></i>
+        <i class="menu-icon tf-icons ri-bank-card-2-line"></i>
         <div>Cards</div>
       </a>
     </li>
     <!-- User interface -->
     <li class='menu-item@(currentPage.StartsWith("/Ui") ? " active open" : "")'>
       <a href="javascript:void(0)" class="menu-link menu-toggle">
-        <i class="menu-icon tf-icons mdi mdi-archive-outline"></i>
+        <i class="menu-icon tf-icons ri-toggle-line"></i>
         <div>User interface</div>
       </a>
       <ul class="menu-sub">
@@ -282,7 +282,7 @@
         </li>
         <li class='menu-item@(currentPage == "/Ui/ListGroups" ? " active" : "")'>
           <a asp-controller="Ui" asp-action="ListGroups" class="menu-link">
-            <div>List groups</div>
+            <div>List Groups</div>
           </a>
         </li>
         <li class='menu-item@(currentPage == "/Ui/Modals" ? " active" : "")'>
@@ -341,7 +341,7 @@
     <!-- Extended components -->
     <li class='menu-item@(currentPage.StartsWith("/ExtendedUi") ? " active open" : "")'>
       <a href="javascript:void(0)" class="menu-link menu-toggle">
-        <i class="menu-icon tf-icons mdi mdi-star-outline"></i>
+        <i class="menu-icon tf-icons ri-box-3-line"></i>
         <div>Extended UI</div>
       </a>
       <ul class="menu-sub">
@@ -359,19 +359,19 @@
     </li>
 
     <!-- Icons -->
-    <li class='menu-item@(currentPage == "/Icons/MdiIcons" ? " active" : "")'>
-      <a asp-controller="Icons" asp-action="MdiIcons" class="menu-link">
-        <i class="menu-icon tf-icons mdi mdi-google-circles-extended"></i>
+    <li class='menu-item@(currentPage == "/Icons/RiIcons" ? " active" : "")'>
+      <a asp-controller="Icons" asp-action="RiIcons" class="menu-link">
+        <i class="menu-icon tf-icons ri-remixicon-line"></i>
         <div>Icons</div>
       </a>
     </li>
 
     <!-- Forms & Tables -->
-    <li class="menu-header fw-medium mt-4"><span class="menu-header-text">Forms &amp; Tables</span></li>
+    <li class="menu-header mt-7"><span class="menu-header-text">Forms &amp; Tables</span></li>
     <!-- Forms -->
     <li class='menu-item@(currentPage.StartsWith("/Forms") ? " active open" : "")'>
       <a href="javascript:void(0);" class="menu-link menu-toggle">
-        <i class="menu-icon tf-icons mdi mdi-form-select"></i>
+        <i class="menu-icon tf-icons ri-radio-button-line"></i>
         <div>Form Elements</div>
       </a>
       <ul class="menu-sub">
@@ -389,7 +389,7 @@
     </li>
     <li class='menu-item@(currentPage.StartsWith("/FormLayouts") ? " active open" : "")'>
       <a href="javascript:void(0);" class="menu-link menu-toggle">
-        <i class="menu-icon tf-icons mdi mdi-cube-outline"></i>
+        <i class="menu-icon tf-icons ri-box-3-line"></i>
         <div>Form Layouts</div>
       </a>
       <ul class="menu-sub">
@@ -408,35 +408,35 @@
     <!-- Form Validation -->
     <li class='menu-item@(currentPage == "/FormValidation/Validation" ? " active" : "")'>
       <a href="https://demos.themeselection.com/materio-aspnet-core-mvc-admin-template/html/vertical-menu-template/form-validation.html" target="_blank" class="menu-link">
-        <i class="menu-icon tf-icons mdi mdi-checkbox-marked-circle-outline"></i>
+        <i class="menu-icon tf-icons ri-checkbox-multiple-line"></i>
         <div>Form Validation</div><div class="badge bg-label-primary fs-tiny rounded-pill ms-auto">Pro</div>
       </a>
     </li>
     <!-- Tables -->
     <li class='menu-item@(currentPage == "/Tables/Basic" ? " active" : "")'>
       <a asp-controller="Tables" asp-action="Basic" class="menu-link">
-        <i class="menu-icon tf-icons mdi mdi-table"></i>
+        <i class="menu-icon tf-icons ri-table-alt-line"></i>
         <div>Tables</div>
       </a>
     </li>
     <!-- Data Tables -->
     <li class='menu-item@(currentPage.StartsWith("/Tables/DataTables") ? " active open" : "")'>
       <a href="https://demos.themeselection.com/materio-aspnet-core-mvc-admin-template/html/vertical-menu-template/tables-datatables-basic.html" target="_blank" class="menu-link">
-        <i class="menu-icon tf-icons mdi mdi-grid"></i>
+        <i class="menu-icon tf-icons ri-grid-line"></i>
         <div>Datatables</div><div class="badge bg-label-primary fs-tiny rounded-pill ms-auto">Pro</div>
       </a>
     </li>
     <!-- Misc -->
-    <li class="menu-header fw-medium mt-4"><span class="menu-header-text">Misc</span></li>
+    <li class="menu-header mt-7"><span class="menu-header-text">Misc</span></li>
     <li class="menu-item">
       <a href='@TempData.Peek("support")' target="_blank" class="menu-link">
-        <i class="menu-icon tf-icons mdi mdi-lifebuoy"></i>
+        <i class="menu-icon tf-icons ri-lifebuoy-line"></i>
         <div>Support</div>
       </a>
     </li>
     <li class="menu-item">
       <a href='@TempData.Peek("documentation")' target="_blank" class="menu-link">
-        <i class="menu-icon tf-icons mdi mdi-file-document-multiple-outline"></i>
+        <i class="menu-icon tf-icons ri-article-line"></i>
         <div>Documentation</div>
       </a>
     </li>
