@@ -65,19 +65,22 @@ const buildCssTask = function (cb) {
           // If conf.minify == true, generate compressed style without sourcemap
           gulpIf(
             conf.minify,
-            `sass src/site.scss:${conf.distPath}/css/site.css src/scss:${conf.distPath}/vendor/css src/fonts:${conf.distPath}/vendor/fonts src/libs:${conf.distPath}/vendor/libs --style compressed --no-source-map`,
+            `sass --load-path=node_modules/ src/site.scss:${conf.distPath}/css/site.css src/scss:${conf.distPath}/vendor/css src/fonts:${conf.distPath}/vendor/fonts src/libs:${conf.distPath}/vendor/libs --style compressed --no-source-map`,
             gulpIf(
               conf.fastDev,
-              `sass  src/site.scss:${conf.distPath}/css/site.css src/scss:${conf.distPath}/vendor/css src/scss/pages:${conf.distPath}/vendor/css/pages src/fonts:${conf.distPath}/vendor/fonts src/libs:${conf.distPath}/vendor/libs --no-source-map`
+              `sass --load-path=node_modules/  src/site.scss:${conf.distPath}/css/site.css src/scss:${conf.distPath}/vendor/css src/scss/pages:${conf.distPath}/vendor/css/pages src/fonts:${conf.distPath}/vendor/fonts src/libs:${conf.distPath}/vendor/libs --no-source-map`
             )
           ),
           function (err) {
             cb(err);
           }
         ),
-        sass({
-          outputStyle: conf.minify ? 'compressed' : 'expanded'
-        }).on('error', sass.logError)
+        sass
+          .sync({
+            includePaths: ['node_modules'], // Add this line to include node_modules
+            outputStyle: conf.minify ? 'compressed' : 'expanded'
+          })
+          .on('error', sass.logError)
       )
     )
     .pipe(gulpIf(conf.sourcemaps, sourcemaps.write()))
@@ -88,7 +91,8 @@ const buildCssTask = function (cb) {
         path.dirname = path.dirname.replace('scss', 'css');
       })
     )
-    .pipe(dest(conf.distPath));
+    .pipe(dest(conf.distPath))
+    .pipe(browserSync.stream());
 };
 
 // Build JS
@@ -147,8 +151,14 @@ const pageJsTask = function () {
 
 const FONT_TASKS = [
   {
-    name: 'materialdesignicons',
-    path: 'node_modules/@mdi/font/fonts/*'
+    name: 'remixicon',
+    path: [
+      'node_modules/remixicon/fonts/remixicon.eot',
+      'node_modules/remixicon/fonts/remixicon.ttf',
+      'node_modules/remixicon/fonts/remixicon.woff',
+      'node_modules/remixicon/fonts/remixicon.woff2',
+      'node_modules/remixicon/fonts/remixicon.svg'
+    ]
   }
 ].reduce(function (tasks, font) {
   const functionName = `buildFonts${font.name.replace(/^./, m => m.toUpperCase())}Task`;

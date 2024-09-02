@@ -3,32 +3,30 @@
 }
 
 @* ************** Content ************** *@
-<h4 class="py-3 mb-4">
-  <span class="text-muted fw-light">Account Settings /</span> Notifications
-</h4>
-
 <div class="row">
   <div class="col-md-12">
-    <ul class="nav nav-pills flex-column flex-md-row mb-4 gap-2 gap-lg-0">
-      <li class="nav-item"><a class="nav-link" href="AccountSettings"><i class="mdi mdi-account-outline mdi-20px me-1"></i> Account</a></li>
-      <li class="nav-item"><a class="nav-link active" href="javascript:void(0);"><i class="mdi mdi-bell-outline mdi-20px me-1"></i> Notifications</a></li>
-      <li class="nav-item"><a class="nav-link" href="AccountSettingsConnections"><i class="mdi mdi-link mdi-20px me-1"></i> Connections</a></li>
-    </ul>
+    <div class="nav-align-top">
+      <ul class="nav nav-pills flex-column flex-md-row mb-6 gap-2 gap-lg-0">
+        <li class="nav-item"><a class="nav-link" href="AccountSettings"><i class="ri-group-line me-1_5"></i> Account</a></li>
+        <li class="nav-item"><a class="nav-link active" href="javascript:void(0);"><i class="ri-notification-4-line me-1_5"></i> Notifications</a></li>
+        <li class="nav-item"><a class="nav-link" href="AccountSettingsConnections"><i class="ri-link-m me-1_5"></i> Connections</a></li>
+      </ul>
+    </div>
     <div class="card">
       <!-- Notifications -->
-      <h5 class="card-header">Recent Devices</h5>
       <div class="card-body">
-        <span>We need permission from your browser to show notifications. <a href="javascript:void(0);" class="notificationRequest">Request Permission</a></span>
+        <h5 class="mb-0">Recent Devices</h5>
+        <span class="card-subtitle">We need permission from your browser to show notifications. <a href="javascript:void(0);" class="notificationRequest">Request Permission</a></span>
         <div class="error"></div>
       </div>
       <div class="table-responsive">
         <table class="table">
-          <thead class="table-light">
+          <thead>
             <tr>
               <th class="text-nowrap fw-medium">Time</th>
-              <th class="text-nowrap fw-medium text-center">✉️ Email</th>
-              <th class="text-nowrap fw-medium text-center">🖥 Browser</th>
-              <th class="text-nowrap fw-medium text-center">👩🏻‍💻 App</th>
+              <th class="text-nowrap fw-medium text-center">Email</th>
+              <th class="text-nowrap fw-medium text-center">Browser</th>
+              <th class="text-nowrap fw-medium text-center">App</th>
             </tr>
           </thead>
           <tbody>
@@ -108,7 +106,7 @@
         </table>
       </div>
       <div class="card-body">
-        <h6 class="mb-4">When should we send you notifications?</h6>
+        <p class="mb-6 fw-medium">When should we send you notifications?</p>
         <form action="javascript:void(0);">
           <div class="row">
             <div class="col-sm-6">
@@ -117,8 +115,8 @@
                 <option>Anytime</option>
               </select>
             </div>
-            <div class="mt-4">
-              <button type="submit" class="btn btn-primary me-2">Save changes</button>
+            <div class="mt-6">
+              <button type="submit" class="btn btn-primary me-3">Save changes</button>
               <button type="reset" class="btn btn-outline-secondary">Reset</button>
             </div>
           </div>

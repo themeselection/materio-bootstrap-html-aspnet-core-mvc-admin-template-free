@@ -6,5 +6,5 @@ namespace AspnetCoreMvcFull.Controllers;
 
 public class IconsController : Controller
 {
-  public IActionResult MdiIcons() => View();
+  public IActionResult RiIcons() => View();
 }
