@@ -189,9 +189,9 @@ If you want to [Free Admin Templates](https://themeselection.com/item/category/f
 
 ## Social Media :earth_africa:
 
-- [X](https://x.com/Theme_Selection)
+- [x](https://x.com/Theme_Selection)
 - [Facebook](https://www.facebook.com/ThemeSelections/)
-- [Pinterest](https://pinterest.com/themeselect/)
+- [Pinterest](https://www.pinterest.com/themeselection/)
 - [Instagram](https://www.instagram.com/themeselection/)
-- [Discord](https://discord.gg/kBHkY7DekX)
+- [Discord](https://discord.com/invite/kBHkY7DekX)
 - [YouTube](https://www.youtube.com/channel/UCuryo5s0CW4aP83itLjIdZg)
