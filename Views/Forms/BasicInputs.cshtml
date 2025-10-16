@@ -7,7 +7,6 @@
 }
 @* ************** Content ************** *@
 <div class="row g-6 mb-6">
-
   <!-- Float label (Outline) -->
   <div class="col-md">
     <div class="card">
@@ -43,12 +42,12 @@
       <h5 class="card-header">Form Controls</h5>
       <div class="card-body demo-vertical-spacing demo-only-element">
         <div class="form-floating form-floating-outline mb-6">
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name&#64;example.com" />
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
           <label for="exampleFormControlInput1">Email address</label>
         </div>
         <div class="form-floating form-floating-outline mb-6">
           <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example">
-            <option selected>Open this select menu</option>
+            <option selected="selected">Open this select menu</option>
             <option value="1">One</option>
             <option value="2">Two</option>
             <option value="3">Three</option>
@@ -56,7 +55,7 @@
           <label for="exampleFormControlSelect1">Example select</label>
         </div>
         <div class="form-floating form-floating-outline mb-6">
-          <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+          <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search..." />
           <datalist id="datalistOptions">
             <option value="San Francisco"></option>
             <option value="New York"></option>
@@ -67,24 +66,33 @@
           <label for="exampleDataList">Datalist example</label>
         </div>
         <div class="form-floating form-floating-outline mb-6">
-          <select multiple class="form-select h-px-100" id="exampleFormControlSelect2" aria-label="Multiple select example">
-            <option selected>Open this select menu</option>
+          <select multiple="multiple" class="form-select h-100" id="exampleFormControlSelect2" aria-label="Multiple select example">
+            <option selected="selected">Open this select menu</option>
             <option value="1">One</option>
             <option value="2">Two</option>
             <option value="3">Three</option>
           </select>
           <label for="exampleFormControlSelect2">Example multiple select</label>
         </div>
+        <div class="mb-6">
+          <label for="exampleFormControlSelect3" class="form-label">An example of a multi-select option is the 'size' attribute</label>
+          <select class="form-select" id="exampleFormControlSelect3" size="2" aria-label="Size 2 select example">
+            <option selected="selected">Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
         <div class="form-floating form-floating-outline mb-6">
           <textarea class="form-control h-px-100" id="exampleFormControlTextarea1" placeholder="Comments here..."></textarea>
           <label for="exampleFormControlTextarea1">Example textarea</label>
         </div>
         <div class="form-floating form-floating-outline mb-6">
-          <input class="form-control" type="text" id="exampleFormControlReadOnlyInput1" placeholder="Readonly input here..." readonly />
+          <input class="form-control" type="text" id="exampleFormControlReadOnlyInput1" placeholder="Readonly input here..." readonly="readonly" />
           <label for="exampleFormControlReadOnlyInput1">Read only without value</label>
         </div>
         <div class="form-floating form-floating-outline">
-          <input type="text" readonly class="form-control-plaintext px-0" id="exampleFormControlReadOnlyInputPlain1" value="email&#64;example.com" />
+          <input type="text" readonly="readonly" class="form-control-plaintext px-0" id="exampleFormControlReadOnlyInputPlain1" value="email@example.com" />
           <label for="exampleFormControlReadOnlyInputPlain1" class="px-0">Read only with value</label>
         </div>
       </div>
@@ -96,7 +104,7 @@
     <div class="card">
       <h5 class="card-header">Input Sizing</h5>
       <div class="card-body">
-        <small class="text-light fw-medium">Input text</small>
+        <small class="fw-medium">Input text</small>
 
         <div class="mt-2 mb-4">
           <label for="largeInput" class="form-label">Large input</label>
@@ -113,7 +121,7 @@
       </div>
       <hr class="m-0" />
       <div class="card-body">
-        <small class="text-light fw-medium">Input select</small>
+        <small class="fw-medium">Input select</small>
         <div class="mt-2 mb-4">
           <label for="largeSelect" class="form-label">Large select</label>
           <select id="largeSelect" class="form-select form-select-lg">
@@ -152,63 +160,45 @@
       <!-- Checkboxes and Radios -->
       <div class="row row-bordered g-0">
         <div class="col-md p-6">
-          <small class="text-light fw-medium">Checkboxes</small>
+          <small class="fw-medium">Checkboxes</small>
           <div class="form-check mt-4">
             <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-            <label class="form-check-label" for="defaultCheck1">
-              Unchecked
-            </label>
+            <label class="form-check-label" for="defaultCheck1"> Unchecked </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" checked />
-            <label class="form-check-label" for="defaultCheck2">
-              Indeterminate
-            </label>
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" checked="checked" />
+            <label class="form-check-label" for="defaultCheck2"> Indeterminate </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck3" checked />
-            <label class="form-check-label" for="defaultCheck3">
-              Checked
-            </label>
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck3" checked="checked" />
+            <label class="form-check-label" for="defaultCheck3"> Checked </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="disabledCheck1" disabled />
-            <label class="form-check-label" for="disabledCheck1">
-              Disabled Unchecked
-            </label>
+            <input class="form-check-input" type="checkbox" value="" id="disabledCheck1" disabled="disabled" />
+            <label class="form-check-label" for="disabledCheck1"> Disabled Unchecked </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="disabledCheck2" disabled checked />
-            <label class="form-check-label" for="disabledCheck2">
-              Disabled Checked
-            </label>
+            <input class="form-check-input" type="checkbox" value="" id="disabledCheck2" disabled="disabled" checked="checked" />
+            <label class="form-check-label" for="disabledCheck2"> Disabled Checked </label>
           </div>
         </div>
         <div class="col-md p-6">
-          <small class="text-light fw-medium">Radio</small>
+          <small class="fw-medium">Radio</small>
           <div class="form-check mt-4">
             <input name="default-radio-1" class="form-check-input" type="radio" value="" id="defaultRadio1" />
-            <label class="form-check-label" for="defaultRadio1">
-              Unchecked
-            </label>
+            <label class="form-check-label" for="defaultRadio1"> Unchecked </label>
           </div>
           <div class="form-check">
-            <input name="default-radio-1" class="form-check-input" type="radio" value="" id="defaultRadio2" checked />
-            <label class="form-check-label" for="defaultRadio2">
-              Checked
-            </label>
+            <input name="default-radio-1" class="form-check-input" type="radio" value="" id="defaultRadio2" checked="checked" />
+            <label class="form-check-label" for="defaultRadio2"> Checked </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" value="" id="disabledRadio1" disabled />
-            <label class="form-check-label" for="disabledRadio1">
-              Disabled unchecked
-            </label>
+            <input class="form-check-input" type="radio" value="" id="disabledRadio1" disabled="disabled" />
+            <label class="form-check-label" for="disabledRadio1"> Disabled unchecked </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" value="" id="disabledRadio2" disabled checked />
-            <label class="form-check-label" for="disabledRadio2">
-              Disabled checkbox
-            </label>
+            <input class="form-check-input" type="radio" value="" id="disabledRadio2" disabled="disabled" checked="checked" />
+            <label class="form-check-label" for="disabledRadio2"> Disabled checkbox </label>
           </div>
         </div>
       </div>
@@ -216,7 +206,7 @@
       <!-- Inline Checkboxes -->
       <div class="row row-bordered g-0">
         <div class="col-md p-6">
-          <small class="text-light fw-medium d-block">Inline Checkboxes</small>
+          <small class="fw-medium d-block">Inline Checkboxes</small>
           <div class="form-check form-check-inline mt-4">
             <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
             <label class="form-check-label" for="inlineCheckbox1">1</label>
@@ -226,12 +216,12 @@
             <label class="form-check-label" for="inlineCheckbox2">2</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled />
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled="disabled" />
             <label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
           </div>
         </div>
         <div class="col-md p-6">
-          <small class="text-light fw-medium d-block">Inline Radio</small>
+          <small class="fw-medium d-block">Inline Radio</small>
           <div class="form-check form-check-inline mt-4">
             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
             <label class="form-check-label" for="inlineRadio1">1</label>
@@ -241,7 +231,7 @@
             <label class="form-check-label" for="inlineRadio2">2</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled />
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled="disabled" />
             <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
           </div>
         </div>
@@ -250,23 +240,52 @@
 
     <!-- Switches -->
     <div class="card mb-6">
-      <h5 class="card-header">Switches</h5>
-      <div class="card-body">
-        <div class="form-check form-switch mb-2">
-          <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-          <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+      <div class="row row-bordered g-0">
+        <div class="col-xxl-6 col-xl-12 col-md-6">
+          <h5 class="card-header">Switches</h5>
+          <div class="card-body">
+            <div class="form-check form-switch mb-2">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" />
+              <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+            </div>
+            <div class="form-check form-switch mb-2">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked="checked" />
+              <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+            </div>
+            <div class="form-check form-switch mb-2">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckDisabled" disabled="disabled" />
+              <label class="form-check-label" for="flexSwitchCheckDisabled">Disabled switch checkbox input</label>
+            </div>
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckCheckedDisabled" checked="checked" disabled="disabled" />
+              <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Disabled checked switch checkbox input</label>
+            </div>
+          </div>
         </div>
-        <div class="form-check form-switch mb-2">
-          <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
-          <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
-        </div>
-        <div class="form-check form-switch mb-2">
-          <input class="form-check-input" type="checkbox" id="flexSwitchCheckDisabled" disabled>
-          <label class="form-check-label" for="flexSwitchCheckDisabled">Disabled switch checkbox input</label>
-        </div>
-        <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" id="flexSwitchCheckCheckedDisabled" checked disabled>
-          <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Disabled checked switch checkbox input</label>
+        <div class="col-xxl-6 col-xl-12 col-md-6">
+          <h5 class="card-header text-end">Reverse</h5>
+          <div class="card-body">
+            <div class="form-check form-check-reverse">
+              <input class="form-check-input" type="checkbox" value="" id="reverseCheck1" />
+              <label class="form-check-label" for="reverseCheck1"> Reverse checkbox </label>
+            </div>
+            <div class="form-check form-check-reverse">
+              <input class="form-check-input" type="checkbox" value="" id="reverseCheck2" disabled="disabled" />
+              <label class="form-check-label" for="reverseCheck2"> Disabled reverse checkbox </label>
+            </div>
+            <div class="form-check form-check-reverse">
+              <input name="reverse-radio-1" class="form-check-input" type="radio" value="" id="reverseRadio1" />
+              <label class="form-check-label" for="reverseRadio1"> Unchecked </label>
+            </div>
+            <div class="form-check form-check-reverse">
+              <input name="reverse-radio-1" class="form-check-input" type="radio" value="" id="reverseRadio2" checked="checked" />
+              <label class="form-check-label" for="reverseRadio2"> Checked </label>
+            </div>
+            <div class="form-check form-switch form-check-reverse mb-0">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckReverse" />
+              <label class="form-check-label" for="flexSwitchCheckReverse">Reverse switch checkbox input</label>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -277,19 +296,19 @@
       <div class="card-body">
         <div class="mb-4">
           <label for="formRange1" class="form-label">Example range</label>
-          <input type="range" class="form-range" id="formRange1">
+          <input type="range" class="form-range" id="formRange1" />
         </div>
         <div class="mb-4">
           <label for="disabledRange" class="form-label">Disabled range</label>
-          <input type="range" class="form-range" id="disabledRange" disabled>
+          <input type="range" class="form-range" id="disabledRange" disabled="disabled" />
         </div>
         <div class="mb-4">
           <label for="formRange2" class="form-label">Min and max</label>
-          <input type="range" class="form-range" min="0" max="5" id="formRange2">
+          <input type="range" class="form-range" min="0" max="5" id="formRange2" />
         </div>
         <div>
           <label for="formRange3" class="form-label">Steps</label>
-          <input type="range" class="form-range" min="0" max="5" step="0.5" id="formRange3">
+          <input type="range" class="form-range" min="0" max="5" step="0.5" id="formRange3" />
         </div>
       </div>
     </div>
@@ -301,7 +320,7 @@
       <h5 class="card-header">HTML5 Inputs</h5>
       <div class="card-body">
         <div class="form-floating form-floating-outline mb-6">
-          <input class="form-control" type="text" placeholder='@TempData.Peek("appName")' id="html5-text-input" />
+          <input class="form-control" type="text" placeholder="{{ templateName }}" id="html5-text-input" />
           <label for="html5-text-input">Text</label>
         </div>
         <div class="form-floating form-floating-outline mb-6">
@@ -309,11 +328,11 @@
           <label for="html5-search-input">Search</label>
         </div>
         <div class="form-floating form-floating-outline mb-6">
-          <input class="form-control" type="email" placeholder="john&#64;example.com" id="html5-email-input" />
+          <input class="form-control" type="email" placeholder="john@example.com" id="html5-email-input" />
           <label for="html5-email-input">Email</label>
         </div>
         <div class="form-floating form-floating-outline mb-6">
-          <input class="form-control" type="url" placeholder='@TempData.Peek("authorUrl")' id="html5-url-input" />
+          <input class="form-control" type="url" placeholder="{{ creatorUrl }}" id="html5-url-input" />
           <label for="html5-url-input">URL</label>
         </div>
         <div class="form-floating form-floating-outline mb-6">
@@ -349,8 +368,8 @@
           <label for="html5-time-input">Time</label>
         </div>
         <div class="form-floating form-floating-outline mb-6">
-          <input class="form-control" type="color" id="html5-color-input" />
-          <label for="html5-color-input">Color</label>
+          <input class="form-control" type="color" id="html5-color-input" value="#8c57ff" title="Choose your color" />
+          <label for="html5-color-input" class="col-md-2 col-form-label">Color</label>
         </div>
         <div>
           <label for="html5-range" class="form-label">Range</label>
@@ -365,15 +384,23 @@
       <div class="card-body">
         <div class="mb-4">
           <label for="formFile" class="form-label">Default file input example</label>
-          <input class="form-control" type="file" id="formFile">
+          <input class="form-control" type="file" id="formFile" />
         </div>
         <div class="mb-4">
           <label for="formFileMultiple" class="form-label">Multiple files input example</label>
-          <input class="form-control" type="file" id="formFileMultiple" multiple>
+          <input class="form-control" type="file" id="formFileMultiple" multiple="multiple" />
+        </div>
+        <div class="mb-4">
+          <label for="formFileDisabled" class="form-label">Disabled file input example</label>
+          <input class="form-control" type="file" id="formFileDisabled" disabled="disabled" />
+        </div>
+        <div class="mb-4">
+          <label for="formFileSm" class="form-label">Small file input example</label>
+          <input class="form-control form-control-sm" id="formFileSm" type="file" />
         </div>
         <div>
-          <label for="formFileDisabled" class="form-label">Disabled file input example</label>
-          <input class="form-control" type="file" id="formFileDisabled" disabled>
+          <label for="formFileLg" class="form-label">Large file input example</label>
+          <input class="form-control form-control-lg" id="formFileLg" type="file" />
         </div>
       </div>
     </div>
